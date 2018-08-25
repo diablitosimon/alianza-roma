@@ -5,6 +5,9 @@
         </div>
         <div class="card-body">
             <form #loginForm=ngForm (submit)="onSubmit()">
+                <div class="alert alert-danger" [hidden]="!error">
+                  {{error}}
+                </div>
                 <div class="form-group">
                     <label for="exampleInputEmail1">Email address</label>
                     <input type="email" name="email" class="form-control" [(ngModel)]="form.email" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email" required>
@@ -14,7 +17,8 @@
                     <label for="exampleInputPassword1">Password</label>
                     <input type="password" name="password" class="form-control" [(ngModel)]="form.password" id="exampleInputPassword1" placeholder="Password" required>
                 </div>
-                <button type="submit" class="btn btn-primary" [disabled]="!loginForm.valid">Submit</button>
+                <button type="submit" class="btn btn-primary" [disabled]="!loginForm.valid">Sing in</button>
+                <a routerLink="/signup" class="btn btn-info float-right">Sing Up</a>
             </form>
         </div>
     </div>

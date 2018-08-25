@@ -1,3 +1,33 @@
-<p>
-  signup works!
-</p>
+<div class="mt-4 col-6 offset-3">
+  <div class="card">
+    <div class="card-header">
+      Sign Up
+    </div>
+    <div class="card-body">
+      <form #signupForm=ngForm (submit)="onSubmit()">
+        <div class="alert alert-danger" [hidden]="!error">
+          {{error}}
+        </div>
+        <div class="form-group">
+          <label for="inputName1">Name</label>
+          <input type="text" name="name" class="form-control" [(ngModel)]="form.name" id="inputName1" placeholder="Enter name" required>
+        </div>
+        <div class="form-group">
+          <label for="exampleInputEmail1">Email address</label>
+          <input type="email" name="email" class="form-control" [(ngModel)]="form.email" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email" required>
+          <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+        </div>
+        <div class="form-group">
+          <label for="exampleInputPassword1">Password</label>
+          <input type="password" name="password" class="form-control" [(ngModel)]="form.password" id="exampleInputPassword1" placeholder="Password" required>
+        </div>
+        <div class="form-group">
+          <label for="exampleInputPassword2">Password confirmation</label>
+          <input type="password" name="password" class="form-control" [(ngModel)]="form.password_confirmation" id="exampleInputPassword2" placeholder="Password confirm" required>
+        </div>
+        <button type="submit" class="btn btn-primary" [disabled]="!signupForm.valid">Sing Up</button>
+        <a routerLink="/login" class="btn btn-info float-right">Sing in</a>
+      </form>
+    </div>
+  </div>
+</div>
