@@ -41,8 +41,14 @@ class AuthController extends Controller
      */
     public function signup(SignupRequest $request)
     {
-        User::create($request->all());
-        return $this->login($request);
+        $user = new User;
+        $user->name = $request->name;
+        $user->email = $request->email;
+        $user->password = bcrypt($request->password);
+        $user->profile = $request->profile;
+        $user->save();
+
+        return response()->json($user);
     }
 
 

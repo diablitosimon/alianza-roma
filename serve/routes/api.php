@@ -5,4 +5,6 @@ Route::group(['middleware' => 'api'], function ($router) {
     Route::post('refresh', 'AuthController@refresh');
     Route::post('signup', 'AuthController@signup');
     Route::post('me', 'AuthController@me');
+    Route::post('reset', 'ResetController@sendEmail');
+    Route::post('changePassword', 'ChangeController@process');
 });

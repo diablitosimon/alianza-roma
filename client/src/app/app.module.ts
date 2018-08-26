@@ -9,28 +9,36 @@ import {SignupComponent} from './components/signup/signup.component';
 import {ProfileComponent} from './components/profile/profile.component';
 import {ResetComponent} from './components/password/reset/reset.component';
 import {ResponseComponent} from './components/password/response/response.component';
-import {RoutingModule} from './/routing.module';
+import {RoutingModule} from './routing.module';
 import {HttpClientModule} from "@angular/common/http";
+import {AuthService} from "./services/Auth.service";
+import {TokenService} from "./services/token.service";
+import {ActivateService} from "./services/activate.service";
+import {InActivateService} from "./services/in-activate.service";
+import {SnotifyModule, SnotifyService, ToastDefaults} from "ng-snotify";
 
 
 @NgModule({
-    declarations: [
-        AppComponent,
-        NavbarComponent,
-        LoginComponent,
-        SignupComponent,
-        ProfileComponent,
-        ResetComponent,
-        ResponseComponent
-    ],
-    imports: [
-        BrowserModule,
-        RoutingModule,
-        FormsModule,
-        HttpClientModule
-    ],
-    providers: [],
-    bootstrap: [AppComponent]
+  declarations: [
+    AppComponent,
+    NavbarComponent,
+    LoginComponent,
+    SignupComponent,
+    ProfileComponent,
+    ResetComponent,
+    ResponseComponent
+  ],
+  imports: [
+    BrowserModule,
+    RoutingModule,
+    FormsModule,
+    HttpClientModule,
+    SnotifyModule
+  ],
+  providers: [AuthService, TokenService, ActivateService, InActivateService,
+    {provide: 'SnotifyToastConfig', useValue: ToastDefaults}, SnotifyService
+  ],
+  bootstrap: [AppComponent]
 })
 export class AppModule {
 }

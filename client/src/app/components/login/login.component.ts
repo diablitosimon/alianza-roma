@@ -1,5 +1,7 @@
 import {Component, OnInit} from '@angular/core';
-import {HttpClient} from "@angular/common/http";
+import {AuthService} from "../../services/Auth.service";
+import {TokenService} from "../../services/token.service";
+import {Router} from "@angular/router";
 
 @Component({
   selector: 'app-login',
@@ -12,19 +14,28 @@ export class LoginComponent implements OnInit {
     password: null
   };
 
-  error;
+  public error = null;
 
-  constructor(private http: HttpClient) {
+  constructor(
+    private services: AuthService,
+    private token: TokenService,
+    private router: Router) {
   }
 
   onSubmit() {
-    return this.http.post('http://localhost:8000/api/login', this.form)
-      .subscribe(data => console.log(data),
+    this.services.login(this.form)
+      .subscribe(data => this.handleResponse(data),
         error => this.handleError(error))
   };
 
   handleError(error) {
     this.error = error.error.error;
+  }
+
+  handleResponse(data) {
+    this.token.handle(data.access_token);
+    this.services.changeAuthStatus(true);
+    this.router.navigateByUrl('profile');
   }
 
   ngOnInit() {
