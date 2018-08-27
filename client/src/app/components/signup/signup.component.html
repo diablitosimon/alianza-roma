@@ -1,38 +1,52 @@
-<div class="mt-4 col-6 offset-3">
-  <div class="card">
-    <div class="card-header">
-      Sign Up
+<div class="form_wrap">
+  <div class="contac_info">
+    <div class="info-title">
+      <img src="assets/img/logo.png" alt="">
+      <h2>Informacion</h2>
     </div>
-    <div class="card-body">
-      <form #signupForm=ngForm (submit)="onSubmit()">
-        <div class="form-group">
-          <label for="inputName1">Name</label>
-          <input type="text" name="name" class="form-control" [(ngModel)]="form.name" id="inputName1" placeholder="Enter name" required>
-          <div class="alert alert-danger" [hidden]="!error.name">
-            {{error.name}}
-          </div>
-        </div>
-        <div class="form-group">
-          <label for="exampleInputEmail1">Email address</label>
-          <input type="email" name="email" class="form-control" [(ngModel)]="form.email" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email" required>
-          <div class="alert alert-danger" [hidden]="!error.email">
-            {{error.email}}
-          </div>
-        </div>
-        <div class="form-group">
-          <label for="exampleInputPassword1">Password</label>
-          <input type="password" name="password" class="form-control" [(ngModel)]="form.password" id="exampleInputPassword1" placeholder="Password" required>
-          <div class="alert alert-danger" [hidden]="!error.password">
-            {{error.password}}
-          </div>
-        </div>
-        <div class="form-group">
-          <label for="exampleInputPassword2">Password confirmation</label>
-          <input type="password" name="password" class="form-control" [(ngModel)]="form.password_confirmation" id="exampleInputPassword2" placeholder="Password confirm" required>
-        </div>
-        <button type="submit" class="btn btn-primary" [disabled]="!signupForm.valid">Sing Up</button>
-        <a routerLink="/login" class="btn btn-info float-right">Sing in</a>
-      </form>
+    <div class="info-items">
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium asperiores aspernatur eligendi eos
+      </p>
     </div>
   </div>
+
+  <form #signupForm=ngForm (submit)="onSubmit()" class="form_contact">
+    <p><b>Registro de usuarios</b></p>
+    <hr>
+    <div class="form-group">
+      <label for="inputName1">Nombre</label>
+      <input type="text" name="name" class="form-control" [(ngModel)]="form.name" id="inputName1"
+             placeholder="Escriba su nombre" required>
+      <div class="alert alert-danger" [hidden]="!error.name">
+        {{error.name}}
+      </div>
+    </div>
+    <div class="form-group">
+      <label for="exampleInputEmail1">Email</label>
+      <input type="email" name="email" class="form-control" [(ngModel)]="form.email" id="exampleInputEmail1"
+             aria-describedby="emailHelp" placeholder="Escriba su email" required>
+      <div class="alert alert-danger" [hidden]="!error.email">
+        {{error.email}}
+      </div>
+    </div>
+    <div class="form-group">
+      <label for="exampleInputPassword1">Contraseña</label>
+      <input type="password" name="password" class="form-control" [(ngModel)]="form.password" id="exampleInputPassword1"
+             placeholder="Escriba su contraseña" required>
+      <div class="alert alert-danger" [hidden]="!error.password">
+        {{error.password}}
+      </div>
+    </div>
+    <div class="form-group">
+      <label for="exampleInputPassword2">Confirme su contraseña</label>
+      <input type="password" name="password" class="form-control" [(ngModel)]="form.password_confirmation"
+             id="exampleInputPassword2" placeholder="Confirme su contraseña" required>
+    </div>
+    <hr>
+    <div class="form-group">
+      <button type="submit" class="btn-roma" [disabled]="!signupForm.valid">Registrarse</button>
+    </div>
+  </form>
 </div>
+
+
