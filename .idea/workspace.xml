@@ -1,0 +1,791 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="cdb970a3-c5cb-4506-aa00-8932f98dab61" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/client/src/app/components/forms/forms.component.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/app/components/forms/forms.component.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/app/components/forms/forms.component.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/app/services/Auth.service.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/app/services/activate.service.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/app/services/in-activate.service.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/app/services/token.service.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/assets/img/banner.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/assets/img/banner.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/assets/img/banner1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/assets/img/logo-2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/assets/img/logo.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/assets/js/main.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/yarn.lock" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/serve/app/Http/Controllers/ChangeController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/serve/app/Http/Controllers/ResetController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/serve/app/Http/Middleware/CorsAuthenticate.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/serve/app/Http/Requests/ChangePasswordRequest.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/serve/app/Http/Requests/SignupRequest.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/serve/app/Mail/ResetPassowrdMail.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/serve/composer.lock" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/serve/resources/views/Email/passwordReset.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/.angular-cli.json" beforeDir="false" afterPath="$PROJECT_DIR$/client/.angular-cli.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/client/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/app/app.component.css" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/app/app.component.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/app/app.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/app/app.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/app/app.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/app/app.module.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/app/components/login/login.component.css" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/app/components/login/login.component.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/app/components/login/login.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/app/components/login/login.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/app/components/login/login.component.spec.ts" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/app/components/forms/forms.component.spec.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/app/components/login/login.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/app/components/login/login.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/app/components/navbar/navbar.component.css" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/app/components/navbar/navbar.component.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/app/components/navbar/navbar.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/app/components/navbar/navbar.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/app/components/navbar/navbar.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/app/components/navbar/navbar.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/app/components/password/reset/reset.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/app/components/password/reset/reset.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/app/components/password/reset/reset.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/app/components/password/reset/reset.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/app/components/password/response/response.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/app/components/password/response/response.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/app/components/password/response/response.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/app/components/password/response/response.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/app/components/signup/signup.component.css" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/app/components/signup/signup.component.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/app/components/signup/signup.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/app/components/signup/signup.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/app/components/signup/signup.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/app/components/signup/signup.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/app/routing.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/app/routing.module.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/environments/environment.ts" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/environments/environment.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/styles.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/serve/app/Http/Controllers/AuthController.php" beforeDir="false" afterPath="$PROJECT_DIR$/serve/app/Http/Controllers/AuthController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/serve/app/Http/Kernel.php" beforeDir="false" afterPath="$PROJECT_DIR$/serve/app/Http/Kernel.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/serve/app/Providers/AppServiceProvider.php" beforeDir="false" afterPath="$PROJECT_DIR$/serve/app/Providers/AppServiceProvider.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/serve/database/migrations/2014_10_12_000000_create_users_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/serve/database/migrations/2014_10_12_000000_create_users_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/serve/resources/lang/en/validation.php" beforeDir="false" afterPath="$PROJECT_DIR$/serve/resources/lang/en/validation.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/serve/routes/api.php" beforeDir="false" afterPath="$PROJECT_DIR$/serve/routes/api.php" afterDir="false" />
+    </list>
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ComposerSettings" doNotAsk="true" synchronizationState="SYNCHRONIZE">
+    <pharConfigPath>$PROJECT_DIR$/serve/composer.json</pharConfigPath>
+  </component>
+  <component name="FUSProjectUsageTrigger">
+    <session id="373563448">
+      <usages-collector id="statistics.lifecycle.project">
+        <counts>
+          <entry key="project.closed" value="2" />
+          <entry key="project.open.time.3" value="1" />
+          <entry key="project.open.time.5" value="1" />
+          <entry key="project.opened" value="2" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.open">
+        <counts>
+          <entry key="css" value="1" />
+          <entry key="env" value="2" />
+          <entry key="example" value="1" />
+          <entry key="html" value="3" />
+          <entry key="lock" value="1" />
+          <entry key="php" value="12" />
+          <entry key="ts" value="3" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.open">
+        <counts>
+          <entry key=".env file" value="2" />
+          <entry key="CSS" value="1" />
+          <entry key="HTML" value="3" />
+          <entry key="PHP" value="12" />
+          <entry key="PLAIN_TEXT" value="1" />
+          <entry key="TypeScript" value="3" />
+          <entry key="composer.json" value="1" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.edit">
+        <counts>
+          <entry key="css" value="65" />
+          <entry key="env" value="30" />
+          <entry key="html" value="277" />
+          <entry key="php" value="164" />
+          <entry key="ts" value="570" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.edit">
+        <counts>
+          <entry key=".env file" value="30" />
+          <entry key="CSS" value="65" />
+          <entry key="HTML" value="277" />
+          <entry key="PHP" value="164" />
+          <entry key="TypeScript" value="570" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.php.new.test" />
+      <usages-collector id="statistics.php.composer.command.options" />
+      <usages-collector id="statistics.php.composer.actions" />
+      <usages-collector id="statistics.php.rename.constructor" />
+      <usages-collector id="statistics.php.new.class" />
+      <usages-collector id="statistics.js.language.service.starts">
+        <counts>
+          <entry key="Angular2LanguageService" value="1" />
+          <entry key="TsLintLanguageService" value="1" />
+          <entry key="TypeScriptServerServiceImpl" value="1" />
+        </counts>
+      </usages-collector>
+    </session>
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="JavaScript File" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/serve/app/User.php" />
+        <option value="$PROJECT_DIR$/serve/config/app.php" />
+        <option value="$PROJECT_DIR$/serve/config/auth.php" />
+        <option value="$PROJECT_DIR$/serve/app/Http/Middleware/CORS.php" />
+        <option value="$PROJECT_DIR$/serve/app/Providers/AppServiceProvider.php" />
+        <option value="$PROJECT_DIR$/serve/database/migrations/2014_10_12_000000_create_users_table.php" />
+        <option value="$PROJECT_DIR$/serve/app/Http/Middleware/CorsAuthenticate.php" />
+        <option value="$PROJECT_DIR$/serve/app/Http/Kernel.php" />
+        <option value="$PROJECT_DIR$/serve/app/Http/Requests/SignupRequest.php" />
+        <option value="$PROJECT_DIR$/serve/app/Http/Controllers/AuthController.php" />
+        <option value="$PROJECT_DIR$/client/src/app/services/services.service.ts" />
+        <option value="$PROJECT_DIR$/client/src/environments/environment.ts" />
+        <option value="$PROJECT_DIR$/client/src/app/components/signup/signup.component.html" />
+        <option value="$PROJECT_DIR$/client/src/app/components/signup/signup.component.ts" />
+        <option value="$PROJECT_DIR$/client/src/app/services/token.service.ts" />
+        <option value="$PROJECT_DIR$/client/src/app/components/navbar/navbar.component.ts" />
+        <option value="$PROJECT_DIR$/client/src/app/components/login/login.component.ts" />
+        <option value="$PROJECT_DIR$/client/src/app/services/activate.service.ts" />
+        <option value="$PROJECT_DIR$/client/src/app/services/in-activate.service.ts" />
+        <option value="$PROJECT_DIR$/client/src/app/components/password/reset/reset.component.html" />
+        <option value="$PROJECT_DIR$/serve/.env" />
+        <option value="$PROJECT_DIR$/serve/app/Mail/ResetPassowrdMail.php" />
+        <option value="$PROJECT_DIR$/serve/resources/views/Email/passwordReset.blade.php" />
+        <option value="$PROJECT_DIR$/serve/app/Http/Controllers/ResetController.php" />
+        <option value="$PROJECT_DIR$/client/src/app/services/Auth.service.ts" />
+        <option value="$PROJECT_DIR$/client/src/app/routing.module.ts" />
+        <option value="$PROJECT_DIR$/serve/app/Http/Requests/ChangePasswordRequest.php" />
+        <option value="$PROJECT_DIR$/serve/routes/api.php" />
+        <option value="$PROJECT_DIR$/serve/app/Http/Controllers/ChangeController.php" />
+        <option value="$PROJECT_DIR$/client/src/app/components/password/response/response.component.html" />
+        <option value="$PROJECT_DIR$/client/src/styles.css" />
+        <option value="$PROJECT_DIR$/client/src/app/components/password/reset/reset.component.ts" />
+        <option value="$PROJECT_DIR$/serve/resources/lang/en/validation.php" />
+        <option value="$PROJECT_DIR$/client/src/app/components/password/response/response.component.ts" />
+        <option value="$PROJECT_DIR$/client/src/styles.sass" />
+        <option value="$PROJECT_DIR$/client/src/app/components/login/login.component.css" />
+        <option value="$PROJECT_DIR$/client/src/app/components/login/login.component.html" />
+        <option value="$PROJECT_DIR$/client/src/main.js" />
+        <option value="$PROJECT_DIR$/client/src/index.html" />
+        <option value="$PROJECT_DIR$/client/.angular-cli.json" />
+        <option value="$PROJECT_DIR$/client/src/app/app.component.html" />
+        <option value="$PROJECT_DIR$/client/src/app/app.component.css" />
+        <option value="$PROJECT_DIR$/client/src/assets/js/main.js" />
+        <option value="$PROJECT_DIR$/client/src/app/components/navbar/navbar.component.html" />
+        <option value="$PROJECT_DIR$/client/src/app/components/navbar/navbar.component.css" />
+        <option value="$PROJECT_DIR$/client/src/app/app.module.ts" />
+      </list>
+    </option>
+  </component>
+  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+    <sorting>DEFINITION_ORDER</sorting>
+  </component>
+  <component name="NodePackageJsonFileManager">
+    <packageJsonPaths>
+      <path value="$PROJECT_DIR$/client/package.json" />
+      <path value="$PROJECT_DIR$/serve/package.json" />
+    </packageJsonPaths>
+  </component>
+  <component name="PhpServers">
+    <servers />
+  </component>
+  <component name="PhpWorkspaceProjectConfiguration">
+    <include_path>
+      <path value="$PROJECT_DIR$/serve/vendor/paragonie/random_compat" />
+      <path value="$PROJECT_DIR$/serve/vendor/phpspec/prophecy" />
+      <path value="$PROJECT_DIR$/serve/vendor/swiftmailer/swiftmailer" />
+      <path value="$PROJECT_DIR$/serve/vendor/sebastian/global-state" />
+      <path value="$PROJECT_DIR$/serve/vendor/sebastian/comparator" />
+      <path value="$PROJECT_DIR$/serve/vendor/sebastian/environment" />
+      <path value="$PROJECT_DIR$/serve/vendor/sebastian/exporter" />
+      <path value="$PROJECT_DIR$/serve/vendor/laravel/tinker" />
+      <path value="$PROJECT_DIR$/serve/vendor/sebastian/recursion-context" />
+      <path value="$PROJECT_DIR$/serve/vendor/laravel/framework" />
+      <path value="$PROJECT_DIR$/serve/vendor/sebastian/object-enumerator" />
+      <path value="$PROJECT_DIR$/serve/vendor/sebastian/object-reflector" />
+      <path value="$PROJECT_DIR$/serve/vendor/sebastian/resource-operations" />
+      <path value="$PROJECT_DIR$/serve/vendor/lcobucci/jwt" />
+      <path value="$PROJECT_DIR$/serve/vendor/sebastian/code-unit-reverse-lookup" />
+      <path value="$PROJECT_DIR$/serve/vendor/erusev/parsedown" />
+      <path value="$PROJECT_DIR$/serve/vendor/sebastian/diff" />
+      <path value="$PROJECT_DIR$/serve/vendor/sebastian/version" />
+      <path value="$PROJECT_DIR$/serve/vendor/webmozart/assert" />
+      <path value="$PROJECT_DIR$/serve/vendor/league/flysystem" />
+      <path value="$PROJECT_DIR$/serve/vendor/myclabs/deep-copy" />
+      <path value="$PROJECT_DIR$/serve/vendor/symfony/console" />
+      <path value="$PROJECT_DIR$/serve/vendor/symfony/process" />
+      <path value="$PROJECT_DIR$/serve/vendor/symfony/debug" />
+      <path value="$PROJECT_DIR$/serve/vendor/nikic/php-parser" />
+      <path value="$PROJECT_DIR$/serve/vendor/symfony/polyfill-php56" />
+      <path value="$PROJECT_DIR$/serve/vendor/theseer/tokenizer" />
+      <path value="$PROJECT_DIR$/serve/vendor/symfony/polyfill-util" />
+      <path value="$PROJECT_DIR$/serve/vendor/nesbot/carbon" />
+      <path value="$PROJECT_DIR$/serve/vendor/symfony/var-dumper" />
+      <path value="$PROJECT_DIR$/serve/vendor/symfony/polyfill-php72" />
+      <path value="$PROJECT_DIR$/serve/vendor/symfony/http-kernel" />
+      <path value="$PROJECT_DIR$/serve/vendor/fzaninotto/faker" />
+      <path value="$PROJECT_DIR$/serve/vendor/symfony/finder" />
+      <path value="$PROJECT_DIR$/serve/vendor/symfony/routing" />
+      <path value="$PROJECT_DIR$/serve/vendor/tijsverkoyen/css-to-inline-styles" />
+      <path value="$PROJECT_DIR$/serve/vendor/symfony/css-selector" />
+      <path value="$PROJECT_DIR$/serve/vendor/symfony/event-dispatcher" />
+      <path value="$PROJECT_DIR$/serve/vendor/symfony/polyfill-ctype" />
+      <path value="$PROJECT_DIR$/serve/vendor/symfony/translation" />
+      <path value="$PROJECT_DIR$/serve/vendor/symfony/polyfill-mbstring" />
+      <path value="$PROJECT_DIR$/serve/vendor/symfony/http-foundation" />
+      <path value="$PROJECT_DIR$/serve/vendor/vlucas/phpdotenv" />
+      <path value="$PROJECT_DIR$/serve/vendor/tymon/jwt-auth" />
+      <path value="$PROJECT_DIR$/serve/vendor/dragonmantank/cron-expression" />
+      <path value="$PROJECT_DIR$/serve/vendor/psy/psysh" />
+      <path value="$PROJECT_DIR$/serve/vendor/dnoegel/php-xdg-base-dir" />
+      <path value="$PROJECT_DIR$/serve/vendor/egulias/email-validator" />
+      <path value="$PROJECT_DIR$/serve/vendor/doctrine/instantiator" />
+      <path value="$PROJECT_DIR$/serve/vendor/doctrine/inflector" />
+      <path value="$PROJECT_DIR$/serve/vendor/doctrine/lexer" />
+      <path value="$PROJECT_DIR$/serve/vendor/jakub-onderka/php-console-highlighter" />
+      <path value="$PROJECT_DIR$/serve/vendor/jakub-onderka/php-console-color" />
+      <path value="$PROJECT_DIR$/serve/vendor/namshi/jose" />
+      <path value="$PROJECT_DIR$/serve/vendor/monolog/monolog" />
+      <path value="$PROJECT_DIR$/serve/vendor/psr/simple-cache" />
+      <path value="$PROJECT_DIR$/serve/vendor/psr/log" />
+      <path value="$PROJECT_DIR$/serve/vendor/psr/container" />
+      <path value="$PROJECT_DIR$/serve/vendor/phar-io/manifest" />
+      <path value="$PROJECT_DIR$/serve/vendor/phar-io/version" />
+      <path value="$PROJECT_DIR$/serve/vendor/hamcrest/hamcrest-php" />
+      <path value="$PROJECT_DIR$/serve/vendor/filp/whoops" />
+      <path value="$PROJECT_DIR$/serve/vendor/ramsey/uuid" />
+      <path value="$PROJECT_DIR$/serve/vendor/nunomaduro/collision" />
+      <path value="$PROJECT_DIR$/serve/vendor/phpunit/php-file-iterator" />
+      <path value="$PROJECT_DIR$/serve/vendor/phpdocumentor/reflection-docblock" />
+      <path value="$PROJECT_DIR$/serve/vendor/mockery/mockery" />
+      <path value="$PROJECT_DIR$/serve/vendor/phpunit/php-timer" />
+      <path value="$PROJECT_DIR$/serve/vendor/phpdocumentor/type-resolver" />
+      <path value="$PROJECT_DIR$/serve/vendor/phpunit/php-text-template" />
+      <path value="$PROJECT_DIR$/serve/vendor/phpdocumentor/reflection-common" />
+      <path value="$PROJECT_DIR$/serve/vendor/phpunit/php-token-stream" />
+      <path value="$PROJECT_DIR$/serve/vendor/phpunit/php-code-coverage" />
+      <path value="$PROJECT_DIR$/serve/vendor/fideloper/proxy" />
+      <path value="$PROJECT_DIR$/serve/vendor/phpunit/phpunit" />
+      <path value="$PROJECT_DIR$/serve/vendor/composer" />
+    </include_path>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="-8" />
+    <option name="y" value="-8" />
+    <option name="width" value="1382" />
+    <option name="height" value="784" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="Scope" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="jwt" type="b2602c69:ProjectViewProjectNode" />
+              <item name="jwt" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="jwt" type="b2602c69:ProjectViewProjectNode" />
+              <item name="jwt" type="462c0819:PsiDirectoryNode" />
+              <item name="client" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="jwt" type="b2602c69:ProjectViewProjectNode" />
+              <item name="jwt" type="462c0819:PsiDirectoryNode" />
+              <item name="client" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="jwt" type="b2602c69:ProjectViewProjectNode" />
+              <item name="jwt" type="462c0819:PsiDirectoryNode" />
+              <item name="client" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="assets" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="jwt" type="b2602c69:ProjectViewProjectNode" />
+              <item name="jwt" type="462c0819:PsiDirectoryNode" />
+              <item name="client" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="assets" type="462c0819:PsiDirectoryNode" />
+              <item name="img" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="SearchEverywhereHistoryKey" value="clie&#9;FILE&#9;file://C:/Users/ASUS/Desktop/jwt/client&#10;cont&#9;null&#9;null&#10;api&#9;FILE&#9;file://C:/Users/Acer/Documents/alianza-roma-master/serve/routes/api.php&#10;user&#9;null&#9;null" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.tslint" value="C:\Users\Acer\Documents\alianza-roma-master\client\node_modules\tslint" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+    <property name="ts.external.directory.path" value="C:\Program Files\JetBrains\PhpStorm 2018.1.5\plugins\JavaScriptLanguage\jsLanguageServicesImpl\external" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\ASUS\Desktop\jwt\client\src\assets\js" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="cdb970a3-c5cb-4506-aa00-8932f98dab61" name="Default Changelist" comment="" />
+      <created>1535117508338</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1535117508338</updated>
+      <workItem from="1535117510503" duration="3807000" />
+      <workItem from="1535149786904" duration="3514000" />
+      <workItem from="1535159817775" duration="9079000" />
+      <workItem from="1535212509503" duration="59422000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="76155000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-8" y="-8" width="1382" height="784" extended-state="0" />
+    <layout>
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.21633889" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Run" order="2" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="TypeScript" order="8" />
+      <window_info anchor="bottom" id="Version Control" order="9" />
+      <window_info anchor="bottom" id="Database Changes" order="10" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Migrations" order="11" />
+      <window_info anchor="bottom" id="Terminal" order="12" />
+      <window_info anchor="bottom" id="Event Log" order="13" side_tool="true" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Database" order="3" />
+    </layout>
+    <layout-to-restore>
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.21633889" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Run" order="2" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="8" />
+      <window_info anchor="bottom" id="Database Changes" order="9" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Migrations" order="10" />
+      <window_info anchor="bottom" id="Terminal" order="11" />
+      <window_info anchor="bottom" id="Event Log" order="12" side_tool="true" />
+      <window_info anchor="bottom" id="TypeScript" order="13" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Database" order="3" />
+    </layout-to-restore>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+    <option name="exactExcludedFiles">
+      <list>
+        <option value="$PROJECT_DIR$/client/node_modules/karma/config.tpl.js" />
+      </list>
+    </option>
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/serve/bootstrap/cache/.gitignore">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/serve/bootstrap/cache/packages.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/serve/bootstrap/cache/services.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-657" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/serve/composer.lock">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-7778" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/serve/app/Http/Middleware/EncryptCookies.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" column="39" lean-forward="true" selection-start-line="6" selection-start-column="21" selection-end-line="6" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/serve/app/Http/Middleware/VerifyCsrfToken.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/serve/app/Http/Middleware/TrimStrings.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/serve/app/Http/Middleware/RedirectIfAuthenticated.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/serve/app/Http/Middleware/TrustProxies.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/serve/app/Http/Middleware/CheckForMaintenanceMode.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/serve/app/Http/Middleware/CorsAuthenticate.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" column="1" lean-forward="true" selection-start-line="7" selection-start-column="1" selection-end-line="7" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/serve/app/Http/Kernel.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="80">
+          <caret line="21" column="53" selection-start-line="21" selection-start-column="53" selection-end-line="21" selection-end-column="53" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/serve/app/Http/Controllers/Auth/RegisterController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="382">
+          <caret line="63" column="32" selection-start-line="63" selection-start-column="32" selection-end-line="63" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/serve/app/Http/Controllers/AuthController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="50" column="39" selection-start-line="50" selection-start-column="39" selection-end-line="50" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/serve/app/Http/Requests/SignupRequest.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="386">
+          <caret line="24" column="5" selection-start-line="24" selection-start-column="5" selection-end-line="24" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/src/environments/environment.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" column="35" selection-start-line="7" selection-start-column="35" selection-end-line="7" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/src/app/services/token.service.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="458">
+          <caret line="46" column="5" selection-start-line="46" selection-start-column="2" selection-end-line="46" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/src/app/services/in-activate.service.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
+          <folding>
+            <element signature="e#0#43#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/src/app/services/activate.service.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="12" lean-forward="true" selection-start-line="12" selection-end-line="12" />
+          <folding>
+            <element signature="e#0#41#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/src/app/components/password/reset/reset.component.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" column="45" lean-forward="true" selection-start-line="6" selection-start-column="45" selection-end-line="6" selection-end-column="45" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/serve/app/Mail/ResetPasswordMail.php" />
+    <entry file="file://$PROJECT_DIR$/serve/app/Http/Controllers/ResetController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="378">
+          <caret line="42" column="36" lean-forward="true" selection-start-line="42" selection-start-column="36" selection-end-line="42" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/serve/app/Mail/ResetPassowrdMail.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="509">
+          <caret line="34" column="1" lean-forward="true" selection-start-line="34" selection-start-column="1" selection-end-line="34" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/serve/resources/views/Email/passwordReset.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" column="20" selection-start-line="6" selection-start-column="20" selection-end-line="6" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/serve/.env">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="510">
+          <caret line="30" column="19" selection-start-line="30" selection-start-column="19" selection-end-line="30" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/src/app/components/signup/signup.component.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="13" column="14" lean-forward="true" selection-start-line="13" selection-start-column="14" selection-end-line="13" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/serve/app/Http/Requests/ChangePasswordRequest.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="459">
+          <caret line="27" column="45" selection-start-line="27" selection-start-column="45" selection-end-line="27" selection-end-column="45" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/src/app/services/Auth.service.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="19" lean-forward="true" selection-start-line="19" selection-end-line="19" />
+          <folding>
+            <element signature="e#0#43#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/src/app/components/signup/signup.component.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="67">
+          <caret line="13" column="8" selection-start-line="11" selection-start-column="2" selection-end-line="16" selection-end-column="4" />
+          <folding>
+            <element signature="e#0#48#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/serve/routes/api.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="8" column="31" selection-start-line="8" selection-start-column="17" selection-end-line="8" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/serve/app/Http/Controllers/ChangeController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="459">
+          <caret line="28" column="5" lean-forward="true" selection-start-line="28" selection-start-column="5" selection-end-line="28" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/src/app/components/password/response/response.component.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="62" selection-start-line="4" selection-start-column="62" selection-end-line="4" selection-end-column="62" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/src/app/components/password/reset/reset.component.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="390">
+          <caret line="29" column="69" lean-forward="true" selection-start-line="29" selection-start-column="8" selection-end-line="29" selection-end-column="69" />
+          <folding>
+            <element signature="e#0#48#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/serve/resources/lang/en/validation.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="141">
+          <caret line="33" column="68" lean-forward="true" selection-start-line="33" selection-start-column="68" selection-end-line="33" selection-end-column="68" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/src/app/components/password/response/response.component.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="154">
+          <caret line="41" column="76" selection-start-line="41" selection-start-column="76" selection-end-line="41" selection-end-column="76" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/src/app/routing.module.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1120">
+          <caret line="40" column="2" selection-start-line="40" selection-start-column="2" selection-end-line="40" selection-end-column="2" />
+          <folding>
+            <element signature="e#0#39#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/package-lock.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-268826" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/src/main.ts">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/src/app/components/navbar/navbar.component.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="425">
+          <caret line="25" column="24" selection-start-line="25" selection-start-column="24" selection-end-line="25" selection-end-column="24" />
+          <folding>
+            <element signature="e#0#50#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/src/app/components/login/login.component.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" column="17" lean-forward="true" selection-start-line="6" selection-start-column="17" selection-end-line="6" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/.angular-cli.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="250">
+          <caret line="28" column="9" selection-start-line="28" selection-start-column="9" selection-end-line="28" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/src/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="11" column="23" selection-start-line="11" selection-start-column="23" selection-end-line="11" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/src/app/app.component.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" lean-forward="true" selection-start-line="3" selection-end-line="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/src/app/app.component.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="25" selection-start-column="25" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/src/assets/js/main.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="3" lean-forward="true" selection-start-line="4" selection-start-column="3" selection-end-line="4" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/src/app/components/navbar/navbar.component.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="21" column="9" lean-forward="true" selection-start-line="21" selection-start-column="9" selection-end-line="21" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/src/app/components/navbar/navbar.component.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="16" lean-forward="true" selection-start-line="16" selection-end-line="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/src/app/components/login/login.component.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="514">
+          <caret line="30" selection-start-line="30" selection-end-line="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/src/styles.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="280">
+          <caret line="10" column="1" selection-start-line="10" selection-start-column="1" selection-end-line="10" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/src/app/components/login/login.component.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="812">
+          <caret line="35" column="41" selection-start-line="35" selection-start-column="41" selection-end-line="35" selection-end-column="41" />
+          <folding>
+            <element signature="e#0#48#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/src/app/app.module.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="308">
+          <caret line="17" column="60" selection-start-line="17" selection-start-column="60" selection-end-line="17" selection-end-column="60" />
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>

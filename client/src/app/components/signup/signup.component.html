@@ -1,3 +1,45 @@
-<p>
-  signup works!
-</p>
+<!-- //header -->
+<section class="login-wrap">
+  <div class="main_w3agile">
+    <input id="tab-2" type="radio" name="tab" class="sign-up">
+    <label for="tab-2" class="tab">Registrarse</label>
+    <div class="login-form">
+      <!-- signup form -->
+      <div class="signup_wthree">
+        <form #signupForm=ngForm (submit)="onSubmit()">
+          <div class="group">
+            <label for="user1" class="label">Nombre</label>
+            <input [(ngModel)]="form.name" id="user1" type="text" class="input" required>
+            <div class="alert alert-danger" [hidden]="!error.name">
+              {{error.name}}
+            </div>
+          </div>
+          <div class="group">
+            <label for="password1" class="label">Contraseña</label>
+            <input id="password1" [(ngModel)]="form.password" type="password" class="input" data-type="password" required>
+            <div class="alert alert-danger" [hidden]="!error.password">
+              {{error.password}}
+            </div>
+          </div>
+          <div class="group">
+            <label for="password2" class="label">Confirme contraseña</label>
+            <input id="password2" [(ngModel)]="form.password_confirmation" type="password" class="input" data-type="password" required>
+          </div>
+          <div class="group">
+            <label for="email" class="label">Email</label>
+            <input [(ngModel)]="form.email" id="email" type="email" class="input" required>
+            <div class="alert alert-danger" [hidden]="!error.email">
+              {{error.email}}
+            </div>
+          </div>
+          <hr>
+          <div class="group">
+            <button type="submit" class="button" [disabled]="!signupForm.valid" >Registrarse</button>
+          </div>
+        </form>
+      </div>
+      <!-- //signup form -->
+    </div>
+  </div>
+</section>
+<!-- //section -->
