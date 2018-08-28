@@ -15,8 +15,8 @@ import {AuthService} from "./services/Auth.service";
 import {TokenService} from "./services/token.service";
 import {ActivateService} from "./services/activate.service";
 import {InActivateService} from "./services/in-activate.service";
-import {SnotifyModule, SnotifyService, ToastDefaults} from "";
-import { FormsComponent } from './components/forms/forms.component';
+import {SnotifyModule, SnotifyService, ToastDefaults} from "ng-snotify";
+
 
 
 @NgModule({
@@ -27,8 +27,7 @@ import { FormsComponent } from './components/forms/forms.component';
     SignupComponent,
     ProfileComponent,
     ResetComponent,
-    ResponseComponent,
-    FormsComponent
+    ResponseComponent
   ],
   imports: [
     BrowserModule,

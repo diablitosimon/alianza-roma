@@ -7,7 +7,6 @@ import {ResetComponent} from "./components/password/reset/reset.component";
 import {ActivateService} from "./services/activate.service";
 import {InActivateService} from "./services/in-activate.service";
 import {ResponseComponent} from "./components/password/response/response.component";
-import {FormsComponent} from "./components/forms/forms.component";
 
 const appRoutes: Routes = [
   {
@@ -28,10 +27,6 @@ const appRoutes: Routes = [
   {
     path: 'reset',
     component: ResetComponent,
-  },
-  {
-    path: 'forms',
-    component: FormsComponent,
   },
   {
     path: 'response',
