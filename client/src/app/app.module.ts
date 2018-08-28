@@ -16,6 +16,7 @@ import {TokenService} from "./services/token.service";
 import {ActivateService} from "./services/activate.service";
 import {InActivateService} from "./services/in-activate.service";
 import {SnotifyModule, SnotifyService, ToastDefaults} from "ng-snotify";
+import { FooterComponent } from './components/footer/footer.component';
 
 
 
@@ -27,7 +28,8 @@ import {SnotifyModule, SnotifyService, ToastDefaults} from "ng-snotify";
     SignupComponent,
     ProfileComponent,
     ResetComponent,
-    ResponseComponent
+    ResponseComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,

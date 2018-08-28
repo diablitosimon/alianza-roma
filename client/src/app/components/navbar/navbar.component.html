@@ -1,23 +1,13 @@
-<header>
-  <nav>
+<nav>
     <div class="menu-icon">
-      <div class="line-top"></div>
-      <div class="line-center"></div>
-      <div class="line-bottom"></div>
+        <i class="fa fa-bars" style="font-size:40px"></i>
     </div>
-    <div class="logo">
-      <img src="assets/img/logo.png" alt="">
-      <a href="">Alianza Roma</a>
-    </div>
-    <div class="menu">
-      <ul>
-        <li><a href="">Inicio</a></li>
-        <li><a href="">Registrarse</a></li>
-        <li><a href="">Ingresar</a></li>
-        <li><a href="">Profile</a></li>
-        <li><a href="">Logout</a></li>
-      </ul>
-    </div>
-  </nav>
-</header>
-
+    <ul>
+        <li><a href="" *ngIf="!loggedIn">Inicio</a></li>
+        <li><a href="" *ngIf="!loggedIn">Nosotros</a></li>
+        <li><a routerLink="signup" *ngIf="!loggedIn">Registrarse</a></li>
+        <li><a routerLink="login" *ngIf="!loggedIn">Ingresar</a></li>
+        <li><a routerLink="profile" *ngIf="loggedIn">Perfil</a></li>
+        <li><a routerLink="logout" (click)="logout($event)" *ngIf="loggedIn">Cerrar session</a></li>
+    </ul>
+</nav>
