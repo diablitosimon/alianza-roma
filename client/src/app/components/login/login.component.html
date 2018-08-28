@@ -1,30 +1,30 @@
-<div class="mt-4 col-6 offset-3">
-  <div class="card">
-    <div class="card-header text-center">
-      <p><b>Ingresar a la plataforma</b></p>
+<section class="login-wrap">
+    <div class="main_w3agile">
+        <label for="" class="tab">Ingresar</label>
+        <input id="tab-2" type="hidden" name="tab" class="sign-up">
+        <label for="tab-2" class="tab"></label>
+        <div class="login-form">
+            <!-- signin form -->
+            <div class="signin_wthree">
+                <form #signupForm=ngForm (submit)="onSubmit()">
+                    <div class="group">
+                        <label for="user" class="label">Email</label>
+                        <input id="user" [(ngModel)]="form.email" name="email" type="text" class="input" required>
+                    </div>
+                    <div class="group">
+                        <label for="pass" class="label">Password</label>
+                        <input id="pass" [(ngModel)]="form.password" name="password" type="password" class="input" data-type="password" required>
+                    </div>
+                    <hr>
+                    <div class="group">
+                        <input type="submit" class="button" value="Entrar">
+                    </div>
+                    <div class="hr"></div>
+                    <div class="foot-lnk">
+                        <h2><a href="#">Olvido su contraseña?</a></h2>
+                    </div>
+                </form>
+            </div>
+        </div>
     </div>
-    <div class="card-body">
-      <form #loginForm=ngForm (submit)="onSubmit()">
-        <div class="alert alert-danger" [hidden]="!error">
-          {{error}}
-        </div>
-        <div class="form-group">
-          <label for="exampleInputEmail1"><b>Email</b></label>
-          <input type="email" name="email" class="form-control" [(ngModel)]="form.email" id="exampleInputEmail1"
-                 aria-describedby="emailHelp" placeholder="Escriba su e-mail" required>
-        </div>
-        <div class="form-group">
-          <label for="exampleInputPassword1"><b>Contraseña</b></label>
-          <input type="password" name="password" class="form-control" [(ngModel)]="form.password"
-                 id="exampleInputPassword1" placeholder="Escriba su contraseña" required>
-        </div>
-        <small>
-          <a routerLink="/reset">Recuperar contraseña</a>
-        </small>
-        <div class="form-group">
-          <button type="submit" class="btn-roma" [disabled]="!loginForm.valid">Entrar</button>
-        </div>
-      </form>
-    </div>
-  </div>
-</div>
+</section>
