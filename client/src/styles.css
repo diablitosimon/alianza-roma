@@ -2,14 +2,6 @@
 
 @import  '~bootstrap/dist/css/bootstrap.css';
 
-.ng-invalid:not(form){
-    border-left: 5px solid red;
-}
-
-.ng-valid:not(form){
-    border-left: 5px solid green;
-}
-
 /*
 Author: W3layout
 Author URL: http://w3layouts.com
@@ -255,7 +247,7 @@ body a:hover {
 /* content */
 
 body {
-    background: url(/assets/img/banner1.jpg) no-repeat center;
+    background: #F3F4F5;
     background-size: cover;
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -333,6 +325,11 @@ a {
     position: relative;
     background: url(/assets/img/banner.jpg) no-repeat center;
     box-shadow: 0 12px 15px 0 rgba(0, 0, 0, .24), 0 17px 50px 0 rgba(0, 0, 0, .19);
+    -webkit-transform: translate3d(0, -50%, 0);
+    -moz-transform: translate3d(0, -50%, 0);
+    -o-transform: translate3d(0, -50%, 0);
+    -ms-transform: translate3d(0, -50%, 0);
+    transform: translate3d(0, -50%, 0);
 }
 
 .main_w3agile {

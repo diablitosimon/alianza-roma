@@ -1,13 +1,31 @@
-<nav>
-  <div class="menu-icon">
-    <i class="fa fa-bars" style="font-size:40px"></i>
+<nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+    <a class="navbar-brand" href="#">ALIANZA ROMA</a>
+    <ul class="navbar-nav ml-auto">
+      <li class="nav-item">
+        <a class="nav-link" href="" *ngIf="!loggedIn">Inicio</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="" *ngIf="!loggedIn">Nosotros</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" routerLink="signup" *ngIf="!loggedIn">Registrarse</a>
+      </li>
+      <li class="nav-item">
+        <a  class="nav-link"routerLink="login" *ngIf="!loggedIn">Ingresar</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" routerLink="profile" *ngIf="loggedIn">Perfil</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" routerLink="logout" (click)="logout($event)" *ngIf="loggedIn">Cerrar session</a>
+      </li>
+    </ul>
   </div>
-  <ul>
-    <li><a href="">Inicio</a></li>
-    <li><a href="">Nosotros</a></li>
-    <li><a href="">Perfil</a></li>
-    <li><a href="">Registrarse</a></li>
-    <li><a href="">Ingresar</a></li>
-    <li><a href="">Cerrar session</a></li>
-  </ul>
 </nav>
+<header></header>
+<div class="clear"></div>
+<div class="avatar"></div>
