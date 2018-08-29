@@ -1,0 +1,8 @@
+.avatar {
+    height: 180px;
+    width: 180px;
+    margin:0 auto;
+    transform: translate3d(0, -100%, 0);
+    border-radius: 50%;
+    background-color: #1fcdb4;
+}
