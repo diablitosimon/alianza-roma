@@ -46,6 +46,34 @@ class AuthController extends Controller
         $user->email = $request->email;
         $user->password = bcrypt($request->password);
         $user->profile = $request->profile;
+        $user->avatar = $request->avatar;
+        $user->save();
+
+        return response()->json($user);
+    }
+
+    public function showProfile(User $user)
+    {
+        dd($user);
+    }
+
+    /**
+     * @param User $user
+     * @param Request $request
+     * @return \Illuminate\Http\JsonResponse
+     */
+    public function updateProfile(User $user, Request $request)
+    {
+        if ($request->hasFile('avatar')){
+            $file = $request->file('avatar');
+            $name = time().$file->getClientOriginalName();
+            $file->move(public_path().'/images/', $name);
+        }
+
+        $user->name = $request->name;
+        $user->email = $request->email;
+        $user->profile = $request->profile;
+        $user->avatar = $name;
         $user->save();
 
         return response()->json($user);

@@ -14,3 +14,6 @@
 Route::get('/', function () {
     return view('welcome');
 });
+
+Route::put('updateProfile/{user}', 'AuthController@updateProfile');
+Route::get('showProfile/{user}', 'AuthController@showProfile');
